@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>СталеваЕра</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="chooseTrainServiceStyle.css">
+    <script src="chooseTrainServiceScript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a class="logo-link" href="/">
+                    <img class="logo-img" src="logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-list-link" href="/timetable">Розклад</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="/choose-train-service">Замовити квиток</a>
+                </li>
+                <li>
+                    <a href="/signup">Реєстрація/Вхід</a>
+                </li>
+                <li>
+                    <a href="/edit-personal-info">Редагувати особисту інформацію</a>
+                </li>
+                <li>
+                    <a href="/ordered-tickets">Замовлені квитки</a>
+                </li>
+                <li>
+                    <div class="user-icon-container">
+                        <img class="user-icon" src="unautorized-user.png" alt="user-icon">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Виберіть рейс</h1>
+        <div class="train-service-filter">
+            <label for="origin-place">Звідки?</label>
+            <input type="text" id="origin-place" name="origin-place" list="origin-places">
+            <datalist id="origin-places">
+                <option value="м. Львів">
+                <option value="м. Київ">
+            </datalist>
+            <label for="destination-place">Куди?</label>
+            <input type="text" id="destination-place" name="destination-place" list="destination-places">
+            <datalist id="destination-places">
+                <option value="м. Львів">
+                <option value="м. Київ">
+            </datalist>
+            <label for="origin-time">Не раніше?</label>
+            <input type="datetime-local" id="origin-time" name="origin-time">
+            <label for="destination-time">Не пізінше?</label>
+            <input type="datetime-local" id="destination-time" name="destination-time">
+        </div>
+        <div class="train-services">
+            <div class="train-service">
+                <p class="train-service-number">№ 199</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 00:00</p>
+                    <p>м. Львів</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>15.06 04:30</p>
+                    <p>м. Київ</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 1501</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>15.06 09:15</p>
+                    <p>м. Київ</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>16.06 13:40</p>
+                    <p>м. Львів</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 305</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 07:45</p>
+                    <p>с. Вишневе</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>15.06 13:20</p>
+                    <p>м. Одеса</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 512</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 10:15</p>
+                    <p>м. Харків</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>15.06 13:40</p>
+                    <p>м. Дніпро</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 721</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 13:30</p>
+                    <p>м. Луцьк</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>15.06 16:45</p>
+                    <p>м. Івано-Франківськ</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 888</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 16:20</p>
+                    <p>м. Запоріжжя</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>15.06 18:55</p>
+                    <p>м. Херсон</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 943</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 19:40</p>
+                    <p>м. Чернігів</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>15.06 21:10</p>
+                    <p>м. Полтава</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 1056</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>14.06 22:15</p>
+                    <p>м. Вінниця</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>16.06 00:20</p>
+                    <p>м. Житомир</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 1212</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>15.06 03:00</p>
+                    <p>м. Рівне</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>16.06 05:45</p>
+                    <p>м. Тернопіль</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+            <div class="train-service">
+                <p class="train-service-number">№ 1367</p>
+                <img class="train-service-img" src="train.png" alt="train">
+                <div class="train-service-origin">
+                    <p>Відбуття:</p>
+                    <p>15.06 06:30</p>
+                    <p>м. Львів</p>
+                </div>
+                <div class="train-service-destination">
+                    <p>Прибуття:</p>
+                    <p>16.06 10:10</p>
+                    <p>м. Ужгород</p>
+                </div>
+                <div class="train-service-buttons">
+                    <button>Розклад</button>
+                    <button>Квиток</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="contact-information">Phone: +380500191950 | Email: ostap.kuzinovych.kn.2021@lpnu.ua</p>
+        <ul class="social-medias">
+            <li>
+                <a href="https://www.instagram.com/staleva_era/"><img src="instagram-icon.png"
+                        alt="Instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/stalevaeraofficial/"><img src="facebook-icon.png"
+                        alt="Facebook"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/staleva_era"><img src="twitter-icon.png" alt="Twitter"></a>
+            </li>
+        </ul>
+        <p class="copyright-notice">Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>, StalevaEra
+        </p>
+    </footer>
+</body>
+
+</html>

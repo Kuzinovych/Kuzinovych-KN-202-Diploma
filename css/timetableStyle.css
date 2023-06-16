@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 70px;
+    padding: 20px 80px;
+    background-color: black;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.nav-list li a:hover {
+    color: orange;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type {
+    padding-right: none;
+}
+
+.user-icon {
+    height: 70px;
+    width: 70px;
+}
+
+.user-icon-container {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.content {
+    margin: 0 80px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Heebo, Arial, Helvetica, sans-serif;
+}
+
+footer {
+    padding: 20px 80px;
+    background-color: black;
+    margin-top: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer p:hover {
+    color: orange;
+    transition: all .25s ease;
+}
+
+.social-medias {
+    margin: 10px 0;
+}
+
+.social-medias li {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+#train-service-number {
+    margin-bottom: 10px;
+}
+
+.timetable {
+    border-collapse: collapse;
+    min-width: 400px;
+}
+
+.timetable thead tr {
+    background: orange;
+    text-align: left;
+    color: blue;
+    font-weight: bold;
+}
+
+.timetable th, .timetable td {
+    padding: 12px 15px;
+}
+
+.timetable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}

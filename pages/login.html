@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>СталеваЕра</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="loginScript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Сторінка входу</h1>
+        <form>
+            <label for="user-contacts">Електронна пошта / Номер телефону:</label>
+            <input id="user-contacts" name="user-contacts" placeholder="mylovelyemail@gmail.com / +380 BC XXXXXXX"
+                pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)|(^\+380\s\d{2}\s\d{7}$)" required type="text">
+            <label for="password">Пароль:</label>
+            <input id="password" name="password" minlength="8"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).*$" required type="password">
+            <input type="hidden" id="user-contacts-type" name="user-contacts-type" required value>
+            <input type="submit">
+        </form>
+        <div><span>Ще не маєте акаунту? Пройдіть </span><a href="/signup">реєстрацію</a><span>!</span></div>
+    </div>
+</body>
+
+</html>

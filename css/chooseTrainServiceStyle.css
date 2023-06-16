@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 70px;
+    padding: 20px 80px;
+    background-color: black;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.nav-list li a:hover {
+    color: orange;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type {
+    padding-right: none;
+}
+
+.user-icon {
+    height: 70px;
+    width: 70px;
+}
+
+.user-icon-container {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.content {
+    margin: 0 80px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Heebo, Arial, Helvetica, sans-serif;
+}
+
+footer {
+    padding: 20px 80px;
+    background-color: black;
+    margin-top: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer p:hover {
+    color: orange;
+    transition: all .25s ease;
+}
+
+.social-medias {
+    margin: 10px 0;
+}
+
+.social-medias li {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+.train-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 220px;
+    height: 320px;
+    border: 5px dashed black;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.train-service-img {
+    height: 100px;
+    width: auto;
+}
+
+.train-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.train-service .train-service-number {
+    font-size: 18px;
+}
+
+.train-service-origin,
+.train-service-destination {
+    font-size: 16px;
+}
+
+.train-service button {
+    font-size: 16px;
+    font-family: Heebo, Arial, Helvetica, sans-serif;
+    color: blue;
+    background: orange;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.train-service-buttons button:hover {
+    background: linear-gradient(45deg, white, orange, white);
+    border: 1px solid black;
+}
+
+.train-service-filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>СталеваЕра</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="editPersonalInfoStyle.css">
+    <script src="editPersonalInfo.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Редагування особистої інформації</h1>
+        <form action="">
+            <label for="surname">Прізвище:</label>
+            <input id="surname" name="surname" placeholder="Бараник" pattern="^[А-ЩЮЯІЇЄ][а-щьюяіїє]*$" maxlength="40"
+                type="text">
+            <label for="name">Ім'я:</label>
+            <input id="name" name="name" placeholder="Юрій" pattern="^[А-ЩЮЯІЇЄ][а-щьюяіїє]*$" maxlength="40"
+                type="text">
+            <label for="email">Електронна пошта:</label>
+            <input id="email" name="email" placeholder="mylovelyemail@gmail.com" type="email">
+            <label for="phone">Номер телефону:</label>
+            <input id="phone" name="phone" placeholder="+380 BC XXXXXXX" pattern="^\+380\s\d{2}\s\d{7}$" type="tel">
+            <label for="user-icon-img">Зображення профілю (необов'язкове):</label>
+            <div class="user-icon-container"><img class="user-icon-img" src="unautorized-user.png"
+                    alt="user-icon-img"></div>
+            <input id="user-icon-img" name="user-icon-img" type="file">
+            <label for="new-password">Новий пароль (мін. довжина = 8, має мати хоча б один символ з великих літер
+                латинської
+                абетки, малих, цифр, спеціальних символів (!@#$%^&*)):</label>
+            <input id="new-password" name="new-password" minlength="8"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).*$" type="password">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
